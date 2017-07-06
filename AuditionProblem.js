@@ -1,43 +1,25 @@
 
-function findEven(startingnumber, endingnumber, step) {
-    var findEvenNums = [];
-    for (var i = startingnumber; i< endingnumber, i += step;)
-    if (i % 2==0) {
-        return(findEvenNums);
-    }
+function playButton(){
+run();
+return false;
 }
-function validateItems() {
-    clearErrors();
-    var startingnumber = document.forms["numbers"]["startingnumber"].value;
-    var endingnumber = document.forms["numbers"]["endingnumber"].value;
-    var step = document.forms["numbers"]["step"].value;
-
-    if (startingnumber == "" || isNaN(startingnumber)) {
-        alert("Starting Number must be filled in with a number.");
-        document.forms["numbers"]["startingnumber"]
-           .parentElement.className = "form-group has-error";
-        document.forms["numbers"]["startingnumber"].focus();
-        return false;
-    }
-   if (endingnumber == "" || isNaN(endingnumber)) {
-       alert("Ending Number must be filled in with a number.");
-       document.forms["numbers"]["endingnumber"]
-          .parentElement.className = "form-group has-error"
-       document.forms["numbers"]["endingnumber"].focus();
-       return false;
-   }
-     if (step == "" || step < 0 ||  isNaN(step) ) {
-       alert("Step must be filled in with a number.");
-       document.forms["numbers"]["step"]
-          .parentElement.className = "form-group has-error"
-       document.forms["numbers"]["step"].focus();
-       return false;
-     }
-
-
-   
-   return false;
-
+function run(){
+var x = parseInt(document.getElementById("startingNum").value);
+var y = parseInt(document.getElementById("endingNum").value);
+var z = parseInt(document.getElementById("step").value);
+document.getElementById("startNum").innerHTML = x;
+document.getElementById("endNum").innerHTML = y;
+document.getElementById("stepNum").innerHTML = z;
+var evenNum = [];
+while (x < y){ 
+if (x%2 == 0){
+evenNum.push(x);
+} 
+x += z; 
+}
+for (var i = 0; i<evenNum.length; i++){
+document.getElementById("result").innerHTML += "<p>" + evenNum[i] + "</p>"; 
+}
 }
 
 
