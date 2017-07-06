@@ -1,9 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
+
     <script type="text/JavaScript" src="AuditionProblem.js"></script>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-        rel="stylesheet" type="text/css" />>
+
+
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+
+    <!-- jQuery library --> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+
+    <!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+</script>
+
 </head>
 <body>
 <div class="container">
@@ -22,10 +35,21 @@
                 <label for="step">Step</label>
                 <input type="number" class="form-control" id="step">
             </div>   
-            <button type="submit" id="submitButton" class="btn btn-default">Display Evens</button>      
+            <button type="submit" id="submitButton" class="btn btn-default">Display Evens</button> 
+               
     </form>
+      </br>
       
       
 </div>
+
+<div class="container">
+<p> Here are the even numbers between <type id="startingnumber"> and
+     <type id="endingnumber"> by <type id="step">'s.</p>
+<span id="result"></span>
+</div>
+
+
+
 </body>
 </html>
