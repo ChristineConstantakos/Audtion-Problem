@@ -4,18 +4,48 @@
 
     <script type="text/JavaScript" src="AuditionProblem.js"></script>
 
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-        rel="stylesheet" type="text/css" />
-    }
-}
-</script>
+        <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+ 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+    
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </head>
+
+<style media="screen">
+    
+    table {
+        width:40%;
+}
+
+    .titles {
+    text-align: left;
+    font-family: calibri;
+    font-weight: bold;
+    padding-bottom: 10px;
+    }
+
+    caption {
+    font-size: 22px;
+    font-weight: bold;
+    font-family: calibri;
+    text-align: right;
+    }
+
+    .displayevens {
+    text-align: center;
+    padding-top: 10px;
+    }
+
+</style>
+
 <body>
 <div class="container">
     <h1>Sample</h1>
-    <form action = "#" method = "post">
-    <form name="numbers" onsubmit="return validateItems();" class="forminline">
+    <form name="numbers" onsubmit="return validateItems()" class="forminline"
+     method = "post">
             <div class="form-group">
                 <label for="startingnumber">Starting Number</label>
                 <input type="number" class="form-control" id="startingnumber">
@@ -28,7 +58,7 @@
                 <label for="step">Step</label>
                 <input type="number" class="form-control" id="step">
             </div>   
-            <button type="onclick" id="submitButton" class="btn btn-default">Display Evens</button>     
+            <button type="submit" id="submitButton" class="btn btn-default">Display Evens</button>     
     </form>
       </br>
       
@@ -39,10 +69,6 @@
     <p>Here are the even numbers between <span id="startNum"></span> and <span id="endNum"></span> by <span id="stepNum"></span>'s:</p>
     <span id="result"></span>
 </div>
-
-
-  
-
  
 
 
