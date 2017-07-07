@@ -12,6 +12,9 @@
     }
     results.innerHTML = array.join(', ');
 }
+function valiateItems () {
+    var num1 = document.forms["numbers"]["num"]
+}
 
 
 
